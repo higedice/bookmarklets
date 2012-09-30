@@ -37,7 +37,7 @@ iPhone では少し特殊です。[iPhone・iPadのSafariが驚くほど便利�
 #### プロンプト版 ####
 ☆ <a href="BOOKMARKLET01-A">Link to Here</a>
 
-##### iPhone 用ソースコード #####
+iPhone 用ソースコード
 ```javascript
 BOOKMARKLET01-MIN
 ```
@@ -46,7 +46,7 @@ BOOKMARKLET01-MIN
 #### 一覧版 ####
 ☆ <a href="BOOKMARKLET02-A">Links to Here</a>
 
-##### iPhone 用ソースコード #####
+iPhone 用ソースコード
 ```javascript
 BOOKMARKLET02-MIN
 ```
@@ -56,7 +56,7 @@ BOOKMARKLET02-MIN
 ライセンス
 ----------
 
-<README.md> ファイルをご参照ください。
+[README.md](README.md) ファイルをご参照ください。
 
 
 - - - - - - - - - - - - - - - - -

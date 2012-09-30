@@ -37,7 +37,7 @@ iPhone では少し特殊です。[iPhone・iPadのSafariが驚くほど便利�
 #### プロンプト版 ####
 ☆ <a href="javascript:(function(f,b){var%20e=&quot;%20&quot;,a=window.prompt,d=function(g,h,i){return%20a(g,'<a%20href=&quot;'+h+'&quot;'+(i?e+'target=&quot;'+i+'&quot;':&quot;&quot;)+&quot;>&quot;+f+&quot;</a>&quot;)},c;c=a(&quot;Text&quot;,f+e+b);if(!c){c=d(&quot;HTML&quot;,b)}if(!c){c=d(&quot;HTML%20_blank&quot;,b,&quot;_blank&quot;)}if(!c){c=d(&quot;HTML%20_top&quot;,b,&quot;_top&quot;)}})(window.document.title,window.document.URL);">Link to Here</a>
 
-##### iPhone 用ソースコード #####
+iPhone 用ソースコード
 ```javascript
 javascript:(function(f,b){var%20e="%20",a=window.prompt,d=function(g,h,i){return%20a(g,'<a%20href="'+h+'"'+(i?e+'target="'+i+'"':"")+">"+f+"</a>")},c;c=a("Text",f+e+b);if(!c){c=d("HTML",b)}if(!c){c=d("HTML%20_blank",b,"_blank")}if(!c){c=d("HTML%20_top",b,"_top")}})(window.document.title,window.document.URL);
 ```
@@ -46,9 +46,9 @@ javascript:(function(f,b){var%20e="%20",a=window.prompt,d=function(g,h,i){return
 #### 一覧版 ####
 ☆ <a href="javascript:(function(f,d){var%20c=&quot;&amp;lt;&quot;,e=&quot;&amp;gt;&quot;,a=window.open().document,b=function(g,h){var%20i=&quot;<li>&quot;+c+'a%20href=&quot;'+g+'&quot;'+(h?'%20target=&quot;'+h+'&quot;':&quot;&quot;)+e+f+c+&quot;/a&quot;+e+&quot;</li>&quot;;return%20i};a.writeln(&quot;<html><head><title>Links</title></head><body>&quot;);a.writeln(&quot;<ul>&quot;);a.writeln(&quot;<li>&quot;+f+&quot;%20&quot;+d+&quot;</li>&quot;);a.writeln(b(d));a.writeln(b(d,&quot;_blank&quot;));a.writeln(b(d,&quot;_top&quot;));a.writeln(&quot;</ul>&quot;);a.writeln(&quot;</body></html>&quot;)})(window.document.title,window.document.URL);">Links to Here</a>
 
-##### iPhone 用ソースコード #####
+iPhone 用ソースコード
 ```javascript
-javascript:(function(f,d){var%20c="BOOKMARKLET02-MINamp;lt;",e="BOOKMARKLET02-MINamp;gt;",a=window.open().document,b=function(g,h){var%20i="<li>"+c+'a%20href="'+g+'"'+(h?'%20target="'+h+'"':"")+e+f+c+"/a"+e+"</li>";return%20i};a.writeln("<html><head><title>Links</title></head><body>");a.writeln("<ul>");a.writeln("<li>"+f+"%20"+d+"</li>");a.writeln(b(d));a.writeln(b(d,"_blank"));a.writeln(b(d,"_top"));a.writeln("</ul>");a.writeln("</body></html>")})(window.document.title,window.document.URL);
+javascript:(function(f,d){var%20c="&amp;lt;",e="&amp;gt;",a=window.open().document,b=function(g,h){var%20i="<li>"+c+'a%20href="'+g+'"'+(h?'%20target="'+h+'"':"")+e+f+c+"/a"+e+"</li>";return%20i};a.writeln("<html><head><title>Links</title></head><body>");a.writeln("<ul>");a.writeln("<li>"+f+"%20"+d+"</li>");a.writeln(b(d));a.writeln(b(d,"_blank"));a.writeln(b(d,"_top"));a.writeln("</ul>");a.writeln("</body></html>")})(window.document.title,window.document.URL);
 ```
 
 
@@ -56,7 +56,7 @@ javascript:(function(f,d){var%20c="BOOKMARKLET02-MINamp;lt;",e="BOOKMARKLET02-MI
 ライセンス
 ----------
 
-<README.md> ファイルをご参照ください。
+[README.md](README.md) ファイルをご参照ください。
 
 
 - - - - - - - - - - - - - - - - -

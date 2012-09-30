@@ -11,7 +11,7 @@ Open [Setup bookmarklets page](index.md) to setup.
 ## License ##
 
 The MIT License.
-Read <license.txt> or <license,ja.txt>
+Read [license.txt](license.txt) or [license,ja.txt](license,ja.txt)
 
 
 by Higedice (ひげダイス)  2012 

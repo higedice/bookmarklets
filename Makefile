@@ -24,6 +24,7 @@ INSERT	= awk 'BEGIN { \
 				re = ARGV[1]; \
 				getline <ARGV[2]; \
 				js = $$0; \
+				gsub(/&/, "\\\\\&", js); \
 				close(ARGV[2]); \
 				ARGV[1] = ""; \
 				ARGV[2] = ""; \
