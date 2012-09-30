@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ブックマークレット - お髭処ソフト</title>
+</head>
+<body>
+<h1>ブックマークレット - お髭処ソフト</h1>
+
+<p>「ブックマークレット」とはブックマーク (お気に入り) を利用してウェブブラウザに
+ちょっとした機能を追加するものです。</p>
+
+<p>ここでは私ひげダイスが作成した、ちょっとしたオリジナルブックマークレットを
+公開・配布しています。</p>
+
+<p>ブックマークレットの登録・利用方法は、<a href="http://www.hatena.ne.jp/tool/bookmarklet#howto">はてなブックマークレットページの
+ブックマークレットの登録・利用方法</a>
+の説明が丁寧で詳しいので、そちらをご参照ください。</p>
+
+<p>iPhone では少し特殊です。<a href="http://it-pocket.com/iphone-ipad-safari-bookmarklet">iPhone・iPadのSafariが驚くほど便利になる！私が愛用しているブックマークレットまとめ | Mac・iPhone・iPad - ITポケット</a> の方法をご参照ください。</p>
+
+<h2>ブロガー・Twitter ユーザー向けブックマークレット</h2>
+
+<h3>現在のページへのリンク作成</h3>
+
+<p>ウェブブラウザで現在表示中のウェブページのリンクを効率的にコピーするための
+ブックマークレットです。</p>
+
+<p>プロンプト版は、「OK」を押すまで異なるスタイルで「タイトル」と URL・URI を
+表示します。
+一覧版は、同じものを新規ウィンドウ（タブ）に一覧表示します。
+目的のスタイルが表示されたら「コピー」して、ブログ原稿などに貼りつけると
+少ない労力でコンテンツを作成できます。</p>
+
+<p>通常 Safari では URL エンコードされた URL をアドレス欄よりコピーしようとすると
+デコード後のものがコピーされてしまいます。（例えば Wikipedia の日本語の項目）
+これを使用すると、もとの（いわゆる）半角文字だけの URL がコピーできます。</p>
+
+<h4>プロンプト版</h4>
+
+<p>☆ <a href="javascript:(function(f,b){var%20e=&quot;%20&quot;,a=window.prompt,d=function(g,h,i){return%20a(g,'<a%20href=&quot;'+h+'&quot;'+(i?e+'target=&quot;'+i+'&quot;':&quot;&quot;)+&quot;>&quot;+f+&quot;</a>&quot;)},c;c=a(&quot;Text&quot;,f+e+b);if(!c){c=d(&quot;HTML&quot;,b)}if(!c){c=d(&quot;HTML%20_blank&quot;,b,&quot;_blank&quot;)}if(!c){c=d(&quot;HTML%20_top&quot;,b,&quot;_top&quot;)}})(window.document.title,window.document.URL);">Link to Here</a></p>
+
+<p>iPhone 用ソースコード
+<code>
+javascript:(function(f,b){var%20e="%20",a=window.prompt,d=function(g,h,i){return%20a(g,'&lt;a%20href="'+h+'"'+(i?e+'target="'+i+'"':"")+"&gt;"+f+"&lt;/a&gt;")},c;c=a("Text",f+e+b);if(!c){c=d("HTML",b)}if(!c){c=d("HTML%20_blank",b,"_blank")}if(!c){c=d("HTML%20_top",b,"_top")}})(window.document.title,window.document.URL);
+</code></p>
+
+<h4>一覧版</h4>
+
+<p>☆ <a href="javascript:(function(f,d){var%20c=&quot;&amp;lt;&quot;,e=&quot;&amp;gt;&quot;,a=window.open().document,b=function(g,h){var%20i=&quot;<li>&quot;+c+'a%20href=&quot;'+g+'&quot;'+(h?'%20target=&quot;'+h+'&quot;':&quot;&quot;)+e+f+c+&quot;/a&quot;+e+&quot;</li>&quot;;return%20i};a.writeln(&quot;<html><head><title>Links</title></head><body>&quot;);a.writeln(&quot;<ul>&quot;);a.writeln(&quot;<li>&quot;+f+&quot;%20&quot;+d+&quot;</li>&quot;);a.writeln(b(d));a.writeln(b(d,&quot;_blank&quot;));a.writeln(b(d,&quot;_top&quot;));a.writeln(&quot;</ul>&quot;);a.writeln(&quot;</body></html>&quot;)})(window.document.title,window.document.URL);">Links to Here</a></p>
+
+<p>iPhone 用ソースコード
+<code>
+javascript:(function(f,d){var%20c="&amp;amp;lt;",e="&amp;amp;gt;",a=window.open().document,b=function(g,h){var%20i="&lt;li&gt;"+c+'a%20href="'+g+'"'+(h?'%20target="'+h+'"':"")+e+f+c+"/a"+e+"&lt;/li&gt;";return%20i};a.writeln("&lt;html&gt;&lt;head&gt;&lt;title&gt;Links&lt;/title&gt;&lt;/head&gt;&lt;body&gt;");a.writeln("&lt;ul&gt;");a.writeln("&lt;li&gt;"+f+"%20"+d+"&lt;/li&gt;");a.writeln(b(d));a.writeln(b(d,"_blank"));a.writeln(b(d,"_top"));a.writeln("&lt;/ul&gt;");a.writeln("&lt;/body&gt;&lt;/html&gt;")})(window.document.title,window.document.URL);
+</code></p>
+
+<h2>ライセンス</h2>
+
+<p><a href="README.md">README.md</a> ファイルをご参照ください。</p>
+
+<hr />
+
+<p>by Higedice (ひげダイス)  2012 
+<a href="http://d.hatena.ne.jp/higedice/">http://d.hatena.ne.jp/higedice/</a>
+<a href="http://twitter.com/higedice">http://twitter.com/higedice</a></p>
+</body>
