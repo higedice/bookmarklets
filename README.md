@@ -5,7 +5,7 @@ bookmarklets
 
 Small "bookmarklets" for Web browsers.
 
-Open [Setup bookmarklets page](index.md) to setup.
+Open [Setup bookmarklets page](http://higedice.github.com/bookmarklets/) to setup.
 
 
 ## License ##
