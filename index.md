@@ -59,6 +59,13 @@ javascript:(function(f,d){var%20c="&amp;lt;",e="&amp;gt;",a=window.open().docume
 [README.md](README.md) ファイルをご参照ください。
 
 
+
+プロジェクトページ
+------------------
+<https://github.com/higedice/bookmarklets>
+
+
+
 - - - - - - - - - - - - - - - - -
 by Higedice (ひげダイス)  2012 
 <http://d.hatena.ne.jp/higedice/>
